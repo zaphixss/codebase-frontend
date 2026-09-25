@@ -1,0 +1,1257 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #f2f7fb;
+
+    color: #111111;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SHARED SECTION SPACING
+========================================= */
+
+.editorial-intro,
+.featured-section,
+.category-section,
+.fuel-section {
+    width: 100%;
+    max-width: 1180px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.section-label {
+    margin-bottom: 12px;
+
+    color: #666666;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-top: 6px solid #b9b9bd;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1180px;
+
+    min-height: 72px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: -0.8px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.login-link,
+.signup-link {
+    padding: 8px 16px;
+
+    border-radius: 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.login-link {
+    border: 1px solid #cacaca;
+}
+
+.signup-link {
+    color: #ffffff;
+    background-color: #111111;
+
+    border: 1px solid #111111;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 100%;
+    max-width: 1050px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 80px 24px 75px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.announcement {
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    padding: 9px 16px;
+
+    background-color: #f6f6f6;
+
+    border-radius: 18px;
+
+    color: #444444;
+
+    font-size: 13px;
+}
+
+.announcement span {
+    margin-left: 4px;
+}
+
+.hero h1 {
+    max-width: 900px;
+
+    margin-bottom: 20px;
+
+    font-size: 45px;
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero-description {
+    max-width: 660px;
+
+    margin-bottom: 27px;
+
+    color: #555555;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.hero-buttons {
+    margin-bottom: 38px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.dark-button,
+.light-button {
+    padding: 11px 20px;
+
+    border-radius: 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.dark-button {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.light-button {
+    background-color: #ffffff;
+
+    border: 1px solid #d8d8d8;
+}
+
+.trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px 22px;
+
+    color: #444444;
+
+    font-size: 13px;
+}
+
+.trust-row p {
+    white-space: nowrap;
+}
+
+.trust-row i {
+    margin-right: 5px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars li {
+    width: 32px;
+    height: 32px;
+
+    margin-left: -8px;
+
+    overflow: hidden;
+
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+.avatars li:first-child {
+    margin-left: 0;
+}
+
+.avatars img {
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   RECIPE IMAGE STRIP
+========================================= */
+
+.recipe-strip {
+    width: calc(100% - 48px);
+    max-width: 1500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 15px 0 90px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+}
+
+.recipe-strip img {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    background-color: #ffffff;
+
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 0 0 1px #dddddd;
+}
+
+
+/* =========================================
+   EDITORIAL INTRODUCTION
+========================================= */
+
+.editorial-intro {
+    padding-top: 15px;
+    padding-bottom: 90px;
+}
+
+.editorial-intro h2 {
+    max-width: 1050px;
+
+    font-size: 27px;
+    line-height: 1.42;
+
+    letter-spacing: -0.8px;
+
+    font-weight: 500;
+}
+
+.editorial-intro h2 span {
+    color: #666666;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   VISUAL STORY
+========================================= */
+
+.recipe-story {
+    width: calc(100% - 48px);
+    max-width: 1360px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 25px 0 105px;
+
+    display: grid;
+
+    gap: 22px;
+}
+
+.story-small-left,
+.story-main,
+.story-side img {
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.story-small-left {
+    height: 210px;
+}
+
+.story-main {
+    height: 340px;
+}
+
+.story-side img {
+    height: 220px;
+
+    margin-bottom: 17px;
+}
+
+.story-side h3 {
+    margin-bottom: 9px;
+
+    font-size: 16px;
+    line-height: 1.3;
+
+    font-weight: 500;
+}
+
+.story-side p {
+    max-width: 320px;
+
+    color: #555555;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   COMMON SECTION HEADER
+========================================= */
+
+.section-header {
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: 500;
+
+    letter-spacing: -0.6px;
+}
+
+.section-header > a {
+    padding: 8px 15px;
+
+    border-radius: 17px;
+
+    background-color: #111111;
+    color: #ffffff;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FEATURED RECIPES
+========================================= */
+
+.featured-section {
+    padding-top: 25px;
+    padding-bottom: 90px;
+}
+
+.featured-grid {
+    display: grid;
+
+    gap: 28px;
+}
+
+.featured-card {
+    overflow: hidden;
+
+    padding-bottom: 16px;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 280px;
+
+    margin-bottom: 13px;
+
+    object-fit: cover;
+}
+
+.featured-card h3 {
+    margin: 0 14px 9px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.featured-card ul {
+    margin-left: 14px;
+    margin-right: 14px;
+
+    display: flex;
+
+    gap: 18px;
+
+    color: #666666;
+
+    font-size: 13px;
+}
+
+.featured-card li {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* =========================================
+   CATEGORIES + RECOMMENDED RECIPES
+========================================= */
+
+.category-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.category-section h2 {
+    max-width: 700px;
+
+    font-size: 30px;
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+.categories {
+    margin-top: 28px;
+    margin-bottom: 45px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.categories a {
+    padding: 10px 16px;
+
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: background-color 0.2s ease;
+}
+
+.categories a:hover {
+    background-color: #f4f4f4;
+}
+
+
+/* =========================================
+   RECIPE CARDS BELOW CATEGORIES
+========================================= */
+
+.popular-grid {
+    display: grid;
+
+    gap: 28px;
+}
+
+
+.popular-card {
+    overflow: hidden;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    padding-bottom: 16px;
+}
+
+.popular-card-content{
+    padding: 0 15px;
+}
+
+.popular-card img {
+    width: 100%;
+    height: 230px;
+
+    margin-bottom: 14px;
+
+    object-fit: cover;
+
+    border-radius:7px 7px 0 0 ;
+}
+
+.recipe-type {
+    margin-bottom: 5px;
+
+    color: #777777;
+
+    font-size: 13px;
+}
+
+.popular-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.popular-card span {
+    color: #666666;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FUEL YOUR BODY
+========================================= */
+
+.fuel-section {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.fuel-section > h2 {
+    margin-bottom: 32px;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    letter-spacing: -0.8px;
+}
+
+.fuel-grid {
+    display: grid;
+
+    gap: 18px;
+}
+
+.fuel-grid article {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background-color: #111111;
+}
+
+.fuel-grid img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       The black article background shows through slightly.
+       This creates the subtle dark overlay.
+    */
+    opacity: 0.84;
+}
+
+.fuel-grid p {
+    position: absolute;
+    z-index: 2;
+
+    left: 22px;
+    right: 22px;
+    bottom: 24px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   COMMUNITY CTA
+========================================= */
+
+.community-section {
+    width: calc(100% - 48px);
+    max-width: 1180px;
+
+    min-height: 520px;
+
+    margin:
+        20px auto
+        80px;
+
+    padding: 60px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+.community-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 45px 28px;
+
+    background-color: #ffffff;
+
+    border-radius: 9px;
+
+    text-align: center;
+}
+
+.community-card h2 {
+    max-width: 520px;
+
+    margin: 0 auto 22px;
+
+    font-size: 27px;
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    letter-spacing: -0.8px;
+}
+
+.community-card > p {
+    max-width: 500px;
+
+    margin: 0 auto 26px;
+
+    color: #666666;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NEWSLETTER FORM
+========================================= */
+
+.newsletter-form {
+    max-width: 430px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.newsletter-form label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.newsletter-form input {
+    padding: 11px 12px;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+.newsletter-form button {
+    align-self: center;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 17px;
+
+    background-color: #111111;
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.footer-top {
+    width: 100%;
+    max-width: 1180px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 75px 24px 55px;
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    font-size: 34px;
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+.footer-top > p {
+    max-width: 560px;
+
+    margin: 0 auto 38px;
+
+    color: #bcbcbc;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-navigation {
+    max-width: 620px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #353535;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 28px;
+
+    font-size: 14px;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1180px;
+
+    min-height: 85px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 22px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top: 1px solid #333333;
+}
+
+.footer-bottom > p {
+    font-size: 13px;
+}
+
+.footer-bottom nav {
+    display: flex;
+
+    gap: 17px;
+}
+
+.footer-bottom nav a {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 700px) {
+
+    .navbar {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+
+        gap: 24px;
+
+        font-size: 13px;
+    }
+
+    .nav-links i {
+        margin-left: 4px;
+
+        font-size: 8px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 85px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    /* RECIPE IMAGE STRIP */
+
+    .recipe-strip {
+        width: calc(100% - 64px);
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* SHARED SECTIONS */
+
+    .editorial-intro,
+    .featured-section,
+    .category-section,
+    .fuel-section {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+
+    /* EDITORIAL */
+
+    .editorial-intro h2 {
+        font-size: 30px;
+    }
+
+
+    /* VISUAL STORY */
+
+    .recipe-story {
+       
+
+        grid-template-columns:
+            0.65fr
+            1.5fr
+            0.8fr;
+
+        align-items: center;
+        gap: 26px;
+    }
+
+    .story-small-left {
+        margin-top: 180px;
+
+        height: 190px;
+    }
+
+    .story-main {
+        height: 410px;
+    }
+
+    .story-side img {
+        height: 200px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+    .featured-card img {
+        height: 240px;
+    }
+
+
+    /* CATEGORY RECIPES */
+
+    .popular-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 22px;
+    }
+
+
+    /* FUEL */
+
+    .fuel-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 16px;
+    }
+
+
+    /* CTA */
+
+    .community-section {
+        width: calc(100% - 64px);
+
+        margin-bottom: 90px;
+
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1050px) {
+
+    /* HEADER */
+
+    .navbar {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav-links {
+        gap: 30px;
+
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 95px;
+        padding-bottom: 90px;
+    }
+
+    .announcement {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        max-width: 900px;
+
+        font-size: 62px;
+        line-height: 1.06;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        max-width: 660px;
+
+        font-size: 16px;
+    }
+
+    .dark-button,
+    .light-button {
+        padding: 11px 21px;
+
+        font-size: 14px;
+    }
+
+    .trust-row {
+        font-size: 13px;
+    }
+
+
+    /* =====================================
+       IMAGE STRIP
+       80% WIDTH + FOUR EQUAL IMAGES
+    ====================================== */
+
+    .recipe-strip {
+        width: 80%;
+        max-width: 1500px;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 16px;
+    }
+
+    .recipe-strip img {
+        width: 100%;
+
+        aspect-ratio: 4 / 3;
+
+        height: auto;
+    }
+
+
+    /* SHARED */
+
+    .editorial-intro,
+    .featured-section,
+    .category-section,
+    .fuel-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    /* =====================================
+       SMALLER EDITORIAL TEXT
+    ====================================== */
+
+    .editorial-intro h2 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+
+
+    /* =====================================
+       WIDER VISUAL STORY
+    ====================================== */
+
+    .recipe-story {
+        width: 86%;
+        max-width: 1360px;
+
+        grid-template-columns:
+            0.72fr
+            1.75fr
+            0.88fr;
+
+        gap: 30px;
+    }
+
+    .story-small-left {
+        margin-top: 190px;
+
+        height: 210px;
+    }
+
+    .story-main {
+        height: 450px;
+    }
+
+    .story-side img {
+        height: 220px;
+    }
+
+    .story-side h3 {
+        font-size: 17px;
+    }
+
+    .story-side p {
+        max-width: 340px;
+
+        font-size: 14px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-card img {
+        height: 300px;
+    }
+
+    .featured-card h3 {
+        font-size: 17px;
+    }
+
+
+    /* CATEGORY */
+
+    .category-section h2 {
+        font-size: 34px;
+    }
+
+    .categories {
+        margin-bottom: 45px;
+    }
+
+
+    /* POPULAR CARDS */
+
+    .popular-card img {
+        height: 250px;
+    }
+
+
+    /* =====================================
+       PERFECT SQUARE FUEL CARDS
+    ====================================== */
+
+    .fuel-section > h2 {
+        font-size: 30px;
+    }
+
+    .fuel-grid article {
+        aspect-ratio: 1 / 1;
+    }
+
+    .fuel-grid p {
+        font-size: 15px;
+    }
+
+
+    /* CTA */
+
+    .community-section {
+        width: calc(100% - 80px);
+
+        min-height: 560px;
+
+        margin-bottom: 100px;
+    }
+
+    .community-card {
+        max-width: 700px;
+
+        padding: 55px 45px;
+    }
+
+    .community-card h2 {
+        font-size: 30px;
+    }
+
+}

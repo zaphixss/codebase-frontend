@@ -75,10 +75,10 @@ For the THIRD project:
 ==================================================
 
 • Project Name/Type: [e.g., Personal Portfolio / Creator Website]
-• Student Skill Level: [Total Beginner / Intermediate]
-• Project Number: [First Project / Second Project / Third Project]
+• Student Skill Level: [Total Beginner ]
+• Project Number: [ Second Project ]
 • Tech Stack: [e.g., HTML5 and CSS3 only (Vanilla)]
-• UI Style/Aesthetic: [e.g., Modern Vercel-inspired minimalism / Clean Platform UI]
+• UI Style/Aesthetic: [e.g., glass morphism]
 • Deliverables: [e.g., Two separate code snippets: HTML structure and CSS code]
 
 
@@ -89,16 +89,18 @@ For the THIRD project:
 Start now and output the clean HTML and CSS code blocks directly.
 
 
-Project 1: Personal Portfolio / Creator Website
-Personal profile/intro section with avatar, name, role, bio, and location
-Social/profile links
-Personal link-tree style action list
-About or skills section
-Featured work/content cards
-Testimonial/client feedback section
-Reusable card structures
-Social icons and external links
+Project 2: Recipe Membership Platform
+Responsive navbar with logo, recipe links, and sign-in action
+Hero/introduction section
+Featured recipe cards with image, title, category, cooking time, etc.
+Recipe categories/tags section
+Popular or recommended recipes section
+Membership/sign-in section
+Login form with email, password, remember-me option, and submit button
+Member benefits section
+Contact/support section
+Contact form with name, email, subject/message fields, and submit button
+Newsletter or community CTA
 Footer
-Clean spacing and typography hierarchy
-Responsive card and page layout
-Mobile-friendly link and button sizing
+Responsive mobile layout
+
